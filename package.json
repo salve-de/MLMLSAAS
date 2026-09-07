@@ -1,0 +1,16 @@
+{
+  "name": "mlmlsaas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted digital product marketplace and referral ledger",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "dev": "node --watch --env-file-if-exists=.env src/server.mjs",
+    "demo": "node --env-file-if-exists=.env src/server.mjs --demo",
+    "admin": "node --env-file-if-exists=.env scripts/admin.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs"
+  }
+}
